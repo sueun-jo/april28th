@@ -1,0 +1,32 @@
+﻿#include <stdio.h>
+
+int main(void)
+{
+	/*
+	
+	int arr[3] = {0, 1, 2};
+	int* p = arr;
+	printf("Name of Array : %p\n", arr);
+	printf("1st element : %d\n", *(arr + 0));
+	printf("2nd element : %d\n", *(arr + 1));
+	printf("3rd element : %d\n", *(arr + 2));
+
+	printf("1st element : %d\n", p[0]);
+	printf("2nd element : %d\n", p[1]);
+	printf("3rd element : %d\n", p[2]);
+	return 0;
+
+	*/
+
+	int arr1[3] = { 1, 2, 3 };
+	double arr2[3] = { 1.1, 2.2, 3.3 };
+	
+	printf("%d %g \n", *arr1, *arr2);
+	*arr1 += 100;
+	*arr2 += 120.5;
+
+	printf("%d %g \n", arr1[0], arr2[0]);
+
+	return 0;
+}
+
