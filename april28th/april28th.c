@@ -18,15 +18,26 @@ int main(void)
 
 	*/
 
-	int arr1[3] = { 1, 2, 3 };
-	double arr2[3] = { 1.1, 2.2, 3.3 };
-	
-	printf("%d %g \n", *arr1, *arr2);
-	*arr1 += 100;
-	*arr2 += 120.5;
+	/*
+	int arr[3] = {11, 22, 33};
+	int* ptr = arr;
+	printf("%d %d %d \n", *ptr, *(ptr + 1), *(ptr + 2));
 
-	printf("%d %g \n", arr1[0], arr2[0]);
+	printf("%d ", *ptr); ptr++;
+	printf("%d ", *ptr); ptr++;
+	printf("%d ", *ptr); ptr--;
+	printf("%d ", *ptr); ptr--;
+	printf("%d ", *ptr); printf("\n");
 
 	return 0;
+	*/
+
+	int arr[5] = { 1, 2, 3, 4, 5 };
+	int *ptr = &arr[0]; // ptr = arr;
+
+	for (int i = 0; i < 5; i++)
+		printf("%d : %d \n", i, *(ptr+i));
+
+		return 0;
 }
 
